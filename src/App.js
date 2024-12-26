@@ -3,7 +3,7 @@ import ChatBox from "./components/chatBox";
 
 function App() {
   return (
-    <div className="w-full h-full p-4 bg-slate-500">
+    <div className="w-full h-full p-2 md:p-4 article overflow-hidden">
       <ChatBox />
     </div>
   );

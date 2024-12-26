@@ -5,7 +5,6 @@ import { ReactComponent as SendIcon } from "../Assets/send.svg";
 import Loader from "../Loaders/Loader";
 import InfoCard from "../InfoCard/InfoCard";
 import DynamicTextRenderer from "../Dynamic Text render/RenderText";
-import BearLoader from "../Loaders/BearLoader/BearLoader";
 const ChatBox = () => {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
@@ -30,19 +29,15 @@ const ChatBox = () => {
   };
 
   return (
-    <div className="w-full h-screen md:p-28 px-3 flex gap-y-3 flex-col justify-center items-center  bg-slate-500 backGroundImage">
-      <span className="font-manrope font-semibold text-xl text-white">
-        {/* <div class="three">
-          <h1>Temp-Gpt </h1>
-          {" ( For Quick AI Search )"}
-        </div> */}
+    <div className="w-full h-[95vh] flex gap-y-3 flex-col justify-center items-center  bg-transparent">
+      <span className="max-h-14 font-manrope font-semibold text-xl text-white">
         <div class="nine">
           <h1>
             Temp-Gpt<span>{"( For Quick AI Search )"}</span>
           </h1>
         </div>
       </span>
-      <div className="w-full h-[50rem] border-[1px] grid glassMorph grid-rows-12 px-4 pb-3 rounded-md border-white text-white">
+      <div className="w-full h-full border-[1px] grid glassMorph grid-rows-12 px-4 pb-3 rounded-md border-white text-white">
         <div className="w-full row-span-11 flex flex-col gap-y-4 overflow-y-auto pr-3 pt-4">
           {result.length > 0 ? (
             result.map((item, index) => {

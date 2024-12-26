@@ -26,7 +26,7 @@ const InfoCard = () => {
           <p className="text-lg font-bold mt-2">
             Made by Pavan with lots of love ❤️
           </p>
-          <p>Powered By Gemini</p>
+          <p>Powered By Gemini 2.0-flash</p>
         </p>
       </div>
     </div>
