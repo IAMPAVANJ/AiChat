@@ -14,6 +14,7 @@ const ChatBox = () => {
     setLoading(true);
     const obj = { user: true, text: search };
     setResult((prev) => [...prev, obj]);
+    setSearch("");
     try {
       const key = process.env.REACT_APP_AI_KEY;
       const genAI = new GoogleGenerativeAI(key);
